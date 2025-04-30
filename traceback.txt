@@ -1,0 +1,38 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+SyntaxError: invalid syntax (game/script.rpy, line 24)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\main.py", line 579, in main
+    renpy.game.script.analyze()
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\script.py", line 1142, in analyze
+    i.analyze()
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\ast.py", line 1135, in analyze
+    self.atl.analyze(EMPTY_PARAMETERS)
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\atl.py", line 941, in analyze
+    self.mark_constant(analysis)
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\atl.py", line 969, in mark_constant
+    i.mark_constant(analysis)
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\atl.py", line 1316, in mark_constant
+    constant = min(constant, is_constant_expr(expr))
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\py3analysis.py", line 559, in is_constant_expr
+    node, literal = ccache.ast_eval_literal(expr)
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\py3analysis.py", line 785, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\python.py", line 1153, in py_compile
+    raise e
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\python.py", line 1090, in py_compile
+    raise orig_e
+  File "C:\Users\themi\OneDrive\Documents\Renpy\renpy-8.3.7-sdk\renpy\python.py", line 1082, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/script.rpy, line 24)
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.7.25031702
+Jelajah Kampus Teknik Informatika ITS 1.0
+Wed Apr 30 03:11:20 2025
